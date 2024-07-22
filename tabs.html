@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .tab-body{
+        width: 80%;
+        position: relative;
+    }
+
+    .tab-btn{
+        position: absolute;
+    }
+
+    .tab-body-content{
+        position: relative;
+        top: 35px;
+        
+    }
+
+    .tab{
+        padding: 20px;
+    }
+
+    .btn.active{
+        background-color: #f2f2f2;
+    }
+
+    .tab-btn{
+        display: flex;
+        gap: 10px;
+    }
+
+    .tab-btn button{
+        padding: 10px 30px;
+        cursor: pointer;
+        background-color: rgb(221, 200, 240);
+        border: none;
+    }
+
+    .tab{
+        display: none;
+        background-color: #f2f2f2;
+    }
+
+    .active{
+        display: block;
+    }
+    
+</style>
+<body>
+    
+
+    <div class="tab-body">
+        <div class="tab-btn">
+            <button data-id="tab1" class="btn active">Tab1</button>
+            <button data-id="tab2" class="btn">Tab2</button>
+            <button data-id="tab3" class="btn">Tab3</button>
+            <button data-id="tab4" class="btn">Tab4</button>
+        </div>
+
+        <div class="tab-body-content">
+            <div class="tab active" id="tab1">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium harum saepe maiores natus dolor accusantium! Blanditiis ullam nulla eos architecto sit molestiae. Quibusdam quisquam nesciunt iusto minima, nemo hic commodi.
+                Sit, totam libero molestias neque quos omnis natus nemo nam suscipit animi dolores veritatis consequuntur vitae, error modi laborum beatae corporis ipsam eveniet nostrum recusandae tempora similique earum autem. Repellendus.
+                Tempora eum illo dolores placeat quidem pariatur beatae, deleniti autem minima id porro quis quasi. Consequatur vitae hic reiciendis ipsum officiis aperiam, nobis obcaecati, velit pariatur doloribus sequi ullam molestiae?
+                Debitis ut eum repellendus, autem voluptas natus culpa ipsam quis quisquam provident officia esse labore laudantium porro nesciunt suscipit praesentium saepe sit, facere quasi omnis quae pariatur. Qui, beatae fugit.
+                Distinctio deserunt blanditiis quos alias nulla totam explicabo soluta sunt magni animi excepturi voluptatibus nobis cum voluptatum fugiat dignissimos sint similique corporis, accusantium ullam esse. Vero nam accusantium minima amet?
+                Saepe odit quibusdam voluptatum voluptas? Quod voluptas eligendi veniam cumque illum. Architecto asperiores impedit modi! Commodi est et sed omnis labore, cumque fuga debitis hic praesentium facere numquam cum officiis.
+                Nihil, nisi sequi! Cum porro beatae voluptate dolor similique vel, nesciunt odit voluptates quas minus quidem blanditiis! Odit nisi vero, officia dolorem voluptatibus reprehenderit iure beatae, quas suscipit possimus perspiciatis!
+                Qui reiciendis odio vitae laudantium soluta cumque iusto cum cupiditate a iste suscipit autem ratione officia quis, mollitia pariatur voluptas harum et aliquam officiis, excepturi, quam libero omnis consequuntur? Dolorum.
+                Temporibus magnam nemo voluptatibus, laborum, blanditiis minus quibusdam quasi repellendus maxime deserunt minima unde architecto? Sed nihil, adipisci nulla ut doloremque quam eligendi nostrum qui cupiditate necessitatibus. Autem, provident fuga!
+                Qui quos asperiores expedita culpa in necessitatibus fugit non, soluta itaque, blanditiis nihil doloremque laboriosam molestiae nemo deleniti sed adipisci at labore quam eius deserunt accusamus nisi ad totam. At?</p>
+            </div>
+
+            <div class="tab" id="tab2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nemo sed culpa blanditiis accusantium assumenda vel, magni iure quam hic quos deserunt id dolorum! Et exercitationem non ut magnam magni?</p>
+            </div>
+
+            <div class="tab " id="tab3">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, ea dolor, alias ratione optio, voluptates numquam necessitatibus aliquam blanditiis amet laudantium sit nemo odio excepturi officia. Ipsum dolore quis soluta.
+                Blanditiis eius libero perspiciatis facere maiores deserunt magnam aperiam veniam? Quos quis fuga nam hic obcaecati, accusamus eaque alias ducimus pariatur unde, quasi earum quod laborum consequuntur, dignissimos iusto vitae.
+                Quos omnis nihil iusto vel! Aspernatur dolores quasi pariatur magni repellendus quos? At possimus voluptatum aspernatur eum cumque vero, a exercitationem, delectus blanditiis quisquam doloremque quos recusandae repellendus. Voluptas, beatae.
+                Error perferendis velit debitis molestias voluptas ea soluta impedit eveniet corrupti provident sapiente vitae iure voluptate excepturi, natus voluptatum dolor ratione aliquid eligendi ex et tempore fugiat qui dolores! Debitis!
+                Corporis sint alias ipsa sapiente commodi. Nesciunt ipsa mollitia repudiandae non a suscipit quas facere inventore tempora. Blanditiis deleniti dicta dolores suscipit doloribus, alias veniam quia quam perspiciatis possimus optio?
+                Ducimus iure optio labore, tenetur corporis saepe, nisi odit nostrum deserunt sunt nesciunt sint quasi? Maiores unde ab omnis cum totam eum magnam tenetur dicta ipsam error, eveniet explicabo hic.
+                Eum omnis illo deleniti, maxime deserunt atque rem ad quia neque nostrum. Ipsum a sunt ullam odit veritatis omnis perferendis earum numquam nemo rem commodi, voluptatem consequatur, eligendi inventore hic.
+                Reiciendis veniam itaque rem at non similique odio obcaecati molestias incidunt iusto amet quidem illum ad, doloremque quas vel? Omnis deserunt fuga temporibus tempora odit deleniti asperiores, atque voluptatum optio.
+                Cumque aliquam, doloribus labore officiis reprehenderit suscipit qui incidunt vero quidem facilis officia hic rerum optio error sequi. Provident ab aperiam sit ipsum minus nobis ratione, iste veritatis temporibus ipsam.
+                Temporibus inventore modi harum, exercitationem iusto ullam sequi similique est itaque ea sunt excepturi accusantium quam obcaecati repellendus libero delectus nobis enim eligendi cupiditate vel. Earum, architecto nulla! Aspernatur, suscipit.
+                Aut minima cumque expedita sapiente aspernatur sint at quis, omnis minus. Ullam voluptate rerum accusantium pariatur, cum voluptas consequuntur natus est quidem quibusdam. Ratione commodi cum quos architecto magnam eum.
+                Iusto inventore maxime est ipsa. Cupiditate, eius tempore id eveniet nam perspiciatis mollitia modi blanditiis quis perferendis reiciendis non alias! Itaque amet quisquam iure error, dicta excepturi debitis aliquam optio.
+                Autem suscipit ducimus ratione ipsa quae? Debitis veniam ut enim, adipisci culpa cumque officiis corporis quia in ad architecto praesentium similique inventore dolores recusandae aliquid! Perspiciatis magnam fugit non delectus?
+                Corrupti ut culpa inventore facere cum accusamus doloremque delectus perspiciatis enim eveniet earum laudantium incidunt pariatur itaque minima voluptatem eum autem, saepe aperiam necessitatibus! Iste ex soluta sequi cum voluptatem.
+                Illum numquam doloribus asperiores aperiam reprehenderit sunt, autem quas! Similique est reprehenderit nostrum, ea fuga provident perspiciatis dolor optio ipsum, libero maxime itaque? Tempora blanditiis possimus dignissimos aspernatur at quam?</p>
+            </div>
+
+            <div class="tab" id="tab4">
+                <p>lorem</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let tabBody = document.querySelector(".tab-body")
+        let btn = document.querySelectorAll(".btn");
+        let tab = document.querySelectorAll(".tab");
+
+        tabBody.addEventListener('click', (e) => {
+            const id = e.target.dataset.id;
+
+            if(id){
+                btn.forEach( (btns) => {
+                    btns.classList.remove("active");
+                    e.target.classList.add("active");
+                });
+
+                tab.forEach( (cont) => {
+                    cont.classList.remove("active");
+                });
+
+                const element = document.getElementById(id);
+                element.classList.add("active");
+            }
+
+            // console.log(e.target.dataset.id)
+            
+        })
+    </script>
+</body>
+</html>
